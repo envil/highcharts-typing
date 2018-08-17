@@ -4339,9 +4339,25 @@ declare namespace Highcharts {
          * @since 2.3.0
          */
         dataLabels?: RangeDataLabels;
+        /**
+         * Pixel with of the graph line.
+         * @default 1
+         */
+        lineWidth?: number;
+        marker?: Marker;
+        /**
+         * A wrapper object for all the series options in specific states.
+         */
+        states?: {
+            /**
+             * Options for the hovered series
+             */
+            hover?: LineStates;
+        };
     }
 
     interface AreaSplineChart extends AreaChart {
+
     }
 
     interface AreaSplineRangeChart extends AreaRangeChart {
@@ -5123,7 +5139,23 @@ declare namespace Highcharts {
         wrap?: boolean;
     }
 
-    interface SplineChart extends SeriesChart { }
+    interface SplineChart extends SeriesChart { 
+        /**
+         * Pixel with of the graph line.
+         * @default 2
+         */
+        lineWidth?: number;
+        marker?: Marker;
+        /**
+         * A wrapper object for all the series options in specific states.
+         */
+        states?: {
+            /**
+             * Options for the hovered series
+             */
+            hover?: LineStates;
+        };
+    }
 
     /**
      * The size of the point shape is determined by its value relative to its siblings values. Requires the module
