@@ -4361,6 +4361,7 @@ declare namespace Highcharts {
     }
 
     interface AreaSplineRangeChart extends AreaRangeChart {
+      data?: Array<number | [number, number] | [number, number, number] | [string, number, number] | [string, number] | DataPoint>;
     }
 
     interface BarChart extends SeriesChart {
@@ -5139,7 +5140,7 @@ declare namespace Highcharts {
         wrap?: boolean;
     }
 
-    interface SplineChart extends SeriesChart { 
+    interface SplineChart extends SeriesChart {
         /**
          * Pixel with of the graph line.
          * @default 2
