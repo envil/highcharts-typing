@@ -4361,7 +4361,7 @@ declare namespace Highcharts {
     }
 
     interface AreaSplineRangeChart extends AreaRangeChart {
-      data?: Array<number | [number, number] | [number, number, number] | [string, number, number] | [string, number] | DataPoint>;
+
     }
 
     interface BarChart extends SeriesChart {
@@ -5468,7 +5468,7 @@ declare namespace Highcharts {
          *            color: '#FF00FF'
          *        }]
          */
-        data?: Array<number | [number, number] | [string, number] | DataPoint>;
+        data?: Array<number | [number, number] | [number, number, number] | [string, number, number] | [string, number] | DataPoint>;
         /**
          * A description of the series to add to the screen reader information about the series.
          * @since 5.0.0
